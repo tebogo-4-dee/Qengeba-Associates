@@ -138,12 +138,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1.5px dashed var(--forest);
   border-radius: var(--radius-sm);
   font-family: var(--font-display);
   font-weight: 700;
   color: var(--forest);
-  background: var(--paper);
   flex-shrink: 0;
 }
 
@@ -476,6 +474,7 @@ section { padding: 88px 0; }
   border-color: var(--gold-light);
   color: var(--gold-light);
   background: transparent;
+  border: none;
 }
 .footer-brand p { color: #8FA096; font-size: 0.88rem; margin: 0; }
 
