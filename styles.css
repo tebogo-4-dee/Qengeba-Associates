@@ -227,16 +227,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .hero-photo {
   aspect-ratio: 4 / 5;
-  background: repeating-linear-gradient(135deg, #E7E1CE, #E7E1CE 12px, #EEE9DA 12px, #EEE9DA 24px);
-  border: 1.5px dashed var(--forest);
   border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--ink-soft);
-  font-size: 0.88rem;
-  padding: 20px;
+  overflow: hidden;
+  /* dashed border and striped background removed — no longer a placeholder */
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .stat-card, .badge-card {
