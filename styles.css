@@ -492,6 +492,19 @@ section { padding: 88px 0; }
   padding: 22px 24px;
   font-size: 0.82rem;
   color: #74857B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-credit {
+  color: #74857B;
+}
+
+.footer-credit:hover {
+  color: var(--gold-light);
 }
 
 /* ---------- Responsive ---------- */
@@ -541,4 +554,39 @@ section { padding: 88px 0; }
   height: 100%;
   width: auto;
   object-fit: contain;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  color: var(--paper);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  z-index: 60;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 720px) {
+  .whatsapp-float {
+    bottom: 18px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+  }
 }
